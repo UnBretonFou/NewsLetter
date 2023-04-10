@@ -45,7 +45,6 @@ article {
 
 article img {
 	width: 500px;
-    transition: transform 0.3s ease-in-out;
 	height: auto;
 	margin-left: 20px;
 	object-fit: cover;
