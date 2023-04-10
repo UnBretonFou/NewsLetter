@@ -2,7 +2,8 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>- CyberNews -</title>
+	<title>CyberNews - N°04</title>
+    <link rel="icon" href="../img/6.Cadena.png">
 	<style>
         /* Polices */
         @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
@@ -21,6 +22,7 @@
 		img {
 			max-width: 100%;
 			height: auto;
+            border-radius: 5px;
 		}
 
 		/* Styles newsletter */
@@ -59,14 +61,26 @@
         	border-radius: 5px;
         	transition: background-color 0.2s ease-in-out;
         	align-items: center;
-        	margin-top: auto;
+        	margin-top: 15px;
         	margin-bottom: auto;
+            
         }
 
         .btn:hover {
 			background-color: #1c416a;
             transform: scale(1.05);
 		}
+
+        .intro-cyber {
+            font-family: 'Rajdhani', sans-serif;
+            color: #FD4000;
+            text-align: center;
+            
+        }
+        
+        .intro-cyber a:hover {
+            color: red;
+        }
 	</style>
 </head>
 <body>
@@ -92,9 +106,14 @@
         <h2>À ce jour, le nouveau ransomware Rorschach serait le plus rapide pour chiffrer les données !</h2>
 		<p>[...] Il crée une GPO pour se propager vers d'autres machines lorsqu'il est exécuté sur un contrôleur de domaine.</p>
 		<a href="#"><img src="../img/5.Ransomware-Rorschach-Chiffrement-tres-rapide.jpg" alt="Article 3"></a>
-        ________________________________<br><br>
-		<a href="test-index.html" class="btn">En Savoir Plus !</a>
-        
+        ________________________________<br>
+        <a href="test-index.html" class="btn">En Savoir Plus !</a>
+        ________________________________<br><br><br><br><br>
+        <p class="intro-cyber">
+            Parce que nous ne pouvons plus ignorer notre sécurité sur Internet !<br>
+            Allez découvrir l'<a href="https://tryhackme.com/paths">introduction à la Cybersécurité</a>.<br>
+            Par TryHackMe.
+        </p>
 	</div>
 </body>
 </html>

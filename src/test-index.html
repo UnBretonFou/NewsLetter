@@ -2,8 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>CyberNews</title>
+    <title>CyberNews - N°04</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../img/6.Cadena.png">
     <link rel="stylesheet" href="test-style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
@@ -20,7 +21,8 @@
           <li><a href="#">Accueil</a></li>
           <li><a href="#">News</a></li>
           <li><a href="#">Contact</a></li>
-          <li><a href="#">À propos</a></li>
+          <li><a href="https://www.it-connect.fr/a-propos/">À propos</a></li>
+          <li><a href="https://tryhackme.com/hacktivities">S'auto-former</a></li>
         </ul>
       </nav>
     </header>
@@ -52,7 +54,7 @@
 
         <article>
             <div class="article-centent">
-                <h2>Sophos Web Appliance : une faille de sécurité critique vient d’être corrigée !</h2><br>
+                <h2>Sophos Web Appliance : une faille de sécurité critique vient d’être corrigée !</h2><br><strong></strong>
                 <p>
                     Cette semaine, Sophos a mis en ligne de nouvelles mises à jour de sécurité à destination de son produit Sophos Web Appliance pour corriger plusieurs vulnérabilités. 
                     L'une d'elles est considérée comme étant critique et mérite qu'on lui apporte une attention particulière.
@@ -63,7 +65,12 @@
                     CVE-2023-1671, CVE-2022-4934 et CVE-2020-36692. Même si c'est clairement la première CVE citée qui est dangereuse.   
                 </p>
                 <p>
-                     
+                    La faille de sécurité associée à la référence CVE-2023-1671 est considérée comme critique. 
+                    Elle hérite d'un score CVSS de <strong>9,8 sur 10</strong> et un attaquant pourrait l'exploiter à distance sans être authentifié afin d'exécuter du code malveillant sur l'appliance Sophos.
+                </p>
+                <p>
+                    Les deux autres vulnérabilités sont moins critiques puisque la CVE-2022-4934 implique d'être authentifié sur Sophos Web Appliance, 
+                    alors que la faille de sécurité CVE-2020-36692 (datée de 2020 !) de type XSS semble complexe à mettre en œuvre si l'on se réfère au descriptif de Sophos. 
                 </p>
             </div>
             <div>
@@ -76,9 +83,18 @@
         <article>
             <div class="article-centent">
                 <h2>Des ingénieurs de Samsung partagent des infos confidentielles avec ChatGPT</h2><br>
-                
                 <p>
-                       
+                    Chez Samsung, les ingénieurs n'hésitent pas à s'appuyer sur ChatGPT pour travailler. 
+                    La mauvaise nouvelle, c'est que des données secrètes ont été divulguées au moins trois fois lors de requêtes envoyées à ChatGPT.  
+                </p>
+                <p>
+                    Il y a quelques jours, suite à la publication d'une <a href="https://www.cyberhaven.com/blog/4-2-of-workers-have-pasted-company-data-into-chatgpt/" target="_blank">
+                    étude de l'entreprise Cyberhaven</a>, au sujet des données confidentielles communiquées à ChatGPT. Parmi ces données, 
+                    il y a notamment des informations sensibles / internes, des données clientes, des codes sources, etc... On parle d'environ 3,1% des salariés d'après cette même étude.
+                </p>
+                <p>
+                    Cette affaire qui affecte le géant Samsung est un excellent exemple de ce qu'il ne faut pas faire avec ChatGPT. Samsung compte dans ses rangs une quantité importante d'ingénieurs. 
+                    Parmi eux, trois ingénieurs qui ont fait un mauvais usage de ChatGPT. En l'espace de 20 jours, Samsung a identifié trois cas problématiques où il y a eu une fuite de données vers ChatGPT.
                 </p>
             </div>
             <div>
@@ -92,7 +108,24 @@
             <div class="article-centent">
                 <h2>50 modèles d’imprimantes HP affectés par une faille critique : un correctif attendu sous 90 jours</h2><br>
                 <p>
-                       
+                    Certaines imprimantes HP sont affectées par une faille de sécurité critique, mais l'éditeur précise qu'il va falloir attendre avant de bénéficier d'un correctif. 
+                    Faisons le point. De son côté, <a href="https://support.hp.com/us-en/document/ish_7905330-7905358-16/hpsbpi03838" target="_blank">HP indique</a> 
+                    qu'une mise à jour corrective du firmware sera publiée dans les 90 jours.
+                </p>
+                <p>
+                    Associée à la référence CVE-2023-1707, une nouvelle vulnérabilité qui affecte environ 50 modèles d'imprimantes HP destinées au monde de l'entreprise. 
+                    Il s'agit de modèles HP Enterprise LaserJet et HP LaserJet Managed Printers. La liste complète en fin d'article.  
+                </p>
+                <p>
+                    Cette faille de sécurité pouvant conduire à la divulgation d'informations (on peut imaginer que cela s'applique sur les données transmises à l'imprimante) 
+                    est considérée comme critique, car elle hérite d'un score CVSS v3.1 de 9,1 sur 10.   
+                </p>
+                <p>
+                    Toutefois, c'est étonnant qu'un score aussi élevé soit associé à cette faille, car pour qu'une imprimante soit vulnérable, il y a deux conditions à remplir :
+                    <ul>
+                        <li>L'imprimante doit utiliser le firmware FutureSmart 5.6</li>
+                        <li>La fonctionnalité IPsec doit être activée dans la configuration de l'imprimante</li>
+                    </ul>
                 </p>
             </div>
             <div>
@@ -103,8 +136,21 @@
         </article>
 
         <article>
-            <div class="article-centent">
+            <div class="article-centent"><a href="https://research.checkpoint.com/2023/rorschach-a-new-sophisticated-and-fast-ransomware/" target="_blank"></a>
                 <h2>A ce jour, le nouveau ransomware Rorschach serait le plus rapide pour chiffrer les données !</h2><br>
+                <p>
+                    Dans le cadre d'une analyse effectuée suite à un incident de cybersécurité, des chercheurs en sécurité ont fait la découverte d'un ransomware 
+                    qu'ils ont surnommé Rorschach et qui serait actuellement le plus rapide pour chiffrer les données.
+                </p>
+                <p>
+                    Les chercheurs en sécurité de chez Check Point sont à l'origine de cette analyse effectuée après qu'une entreprise américaine ait subi une attaque informatique. Lors de cette attaque, 
+                    les pirates sont parvenus à exploiter une faiblesse dans un outil de sécurité de chez Palo Alto Networks : Corter XDR, en utilisant la technique DLL side-loading.  
+                </p>
+                <p>
+                    D'après le <a href="https://research.checkpoint.com/2023/rorschach-a-new-sophisticated-and-fast-ransomware/" target="_blank">rapport mis en ligne par Check Point</a>, on peut voir que l'attaquant s'est appuyé sur Cortex XDR Dump Service Tool (cy.exe) pour initier l'attaque, ainsi que la bibliothèque winutils.dll. 
+                    Finalement, le payload du ransomware a été exécuté via le processus notepad.exe à partir d'un fichier "config.ini". Une fois qu'une machine est compromise, 
+                    le ransomware efface les journaux des événements de Windwos pour ne pas laisser de traces évidentes.   
+                </p>
                 <p>
                        
                 </p>
