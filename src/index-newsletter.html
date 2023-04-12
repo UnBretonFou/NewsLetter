@@ -52,25 +52,6 @@
 	        align-items: center;
         }
 
-        .btn {
-        	display: inline-block;
-        	padding: 10px 20px;
-        	background-color: #2e6da4;
-        	color: #fff;
-        	text-decoration: none;
-        	border-radius: 5px;
-        	transition: background-color 0.2s ease-in-out;
-        	align-items: center;
-        	margin-top: 15px;
-        	margin-bottom: auto;
-            
-        }
-
-        .btn:hover {
-			background-color: #1c416a;
-            transform: scale(1.05);
-		}
-
         .intro-cyber {
             font-family: 'Rajdhani', sans-serif;
             color: #FD4000;
@@ -81,6 +62,59 @@
         .intro-cyber a:hover {
             color: red;
         }
+
+		/* Bouton custom */
+		.custom-btn {
+	        max-width: 600px;
+	        margin: 25px auto 25px auto;
+            border-radius: 5px;
+	        padding: 20px;
+	        background-color: #fff;
+	        display: flex;
+	        flex-direction: column;
+	        align-items: center;
+        }
+
+		.custom-btn a{
+			border-radius: 5px;
+			display: block;
+			width: 200px;
+			height: 40px;
+			line-height: 40px;
+			font-size: 18px;
+			font-family: sans-serif;
+			text-decoration: none;
+			color: #333;
+			border: 2px solid #333;
+			letter-spacing: 2px;
+			text-align: center;
+			position: relative;
+			transition: all .35s;
+		}
+
+		.custom-btn a span{
+			position: relative;
+			z-index: 2;
+		}
+
+		.custom-btn a:after{
+			position: absolute;
+			content: "";
+			top: 0;
+			left: 0;
+			width: 0;
+			height: 100%;
+			background: #FD4000;
+			transition: all .35s;
+		}
+
+		.custom-btn a:hover{
+			color: #fff;
+		}
+
+		.custom-btn a:hover:after{
+			width: 100%;
+		}
 	</style>
 </head>
 <body>
@@ -89,31 +123,51 @@
         ________________________________
         <h2>Le gang de ransomware Money Message revendique une attaque contre le géant " MSI "</h2>
 		<p>[...] Le volume de données entre les mains des pirates n'est pas neutre puisque l'on parle d'une volumétrie de 1,5 To de données.</p>
-		<a href="#"><img src="../img/1.Ransomware-Money-Message-Cyberattaque-MSI-Avril-2023.jpg" alt="Cybersécurité"></a>
+		<a href="https://www.it-connect.fr/le-gang-de-ransomware-money-message-revendique-une-attaque-contre-le-geant-msi/">
+			<img src="../img/1.Ransomware-Money-Message-Cyberattaque-MSI-Avril-2023.jpg" alt="Cybersécurité">
+		</a>
         ________________________________
 		<h2>Sophos Web Appliance : une faille de sécurité critique vient d’être corrigée !</h2>
 		<p>[...] Nouvelles mises à jour de sécurité à destination de son produit Sophos Web Appliance.</p>
-		<a href="#"><img src="../img/2.Sophos-Web-Appliance-CVE-2023-1671.jpg" alt="Article 1"></a>
+		<a href="https://www.it-connect.fr/sophos-web-appliance-une-faille-de-securite-critique-vient-detre-corrigee/">
+			<img src="../img/2.Sophos-Web-Appliance-CVE-2023-1671.jpg" alt="Article 1">
+		</a>
         ________________________________
 		<h2>Des ingénieurs de Samsung partagent des infos confidentielles avec ChatGPT</h2>
 		<p>[...] Samsung a identifié trois cas problématiques où il y a eu une fuite de données vers ChatGPT.</p>
-		<a href="#"><img src="../img/3.ChatGPT-Fuite-de-donnees-Samsung.jpg" alt="Article 2"></a>
+		<a href="https://www.it-connect.fr/des-ingenieurs-de-samsung-partagent-des-infos-confidentielles-avec-chatgpt/">
+			<img src="../img/3.ChatGPT-Fuite-de-donnees-Samsung.jpg" alt="Article 2">
+		</a>
         ________________________________
 		<h2>50 modèles d’imprimantes HP affectés par une faille critique : un correctif attendu sous 90 jours.</h2>
 		<p>[...] Cette faille de sécurité pouvant conduire à la divulgation d'informations.</p>
-		<a href="#"><img src="../img/4.Imprimantes-HP-Vulnerabilite-critique-CVE-2023-1707.jpg" alt="Article 3"></a>
+		<a href="https://www.it-connect.fr/50-modeles-dimprimantes-hp-affectes-par-une-faille-critique-un-correctif-attendu-sous-90-jours/">
+			<img src="../img/4.Imprimantes-HP-Vulnerabilite-critique-CVE-2023-1707.jpg" alt="Article 3">
+		</a>
         ________________________________
         <h2>À ce jour, le nouveau ransomware Rorschach serait le plus rapide pour chiffrer les données !</h2>
 		<p>[...] Il crée une GPO pour se propager vers d'autres machines lorsqu'il est exécuté sur un contrôleur de domaine.</p>
-		<a href="#"><img src="../img/5.Ransomware-Rorschach-Chiffrement-tres-rapide.jpg" alt="Article 3"></a>
+		<a href="https://www.it-connect.fr/a-ce-jour-le-nouveau-ransomware-rorschach-serait-le-plus-rapide-pour-chiffrer-les-donnees/">
+			<img src="../img/5.Ransomware-Rorschach-Chiffrement-tres-rapide.jpg" alt="Article 3">
+		</a>
+        ________________________________
+        
+		<div class="custom-btn">
+			<a  href="test-index.html"><span>En savoir plus !</span></a>
+		  </div>
         ________________________________<br>
-        <a href="test-index.html" class="btn">En Savoir Plus !</a>
-        ________________________________<br><br><br><br><br>
         <p class="intro-cyber">
             Parce que nous ne pouvons plus ignorer notre sécurité sur Internet !<br>
             Allez découvrir l'<a href="https://tryhackme.com/paths">introduction à la Cybersécurité</a>.<br>
             Par TryHackMe.
-        </p>
+        </p><br><br><br><br><br>
+
+	
+
+		
+		Clique <a href="#" target="_blank">ICI</a> pour te désabonner.
+		
 	</div>
+	
 </body>
 </html>
