@@ -1,10 +1,13 @@
 /* Code CSS pour CyberNews */
+/* @media screen and (min-width: 600px) {
+    /* Règles CSS */
 
 
 /* Responsive design */
 @media screen and (max-width: 768px) {
     nav {
     text-align: center;
+    flex-direction: column;
     }
     
 nav li {
